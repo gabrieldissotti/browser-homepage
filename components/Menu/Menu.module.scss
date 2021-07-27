@@ -1,0 +1,67 @@
+.menu {
+  position: relative;
+  width: 5.5rem;
+  padding-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #232433;
+
+  button {
+   
+    margin-top: 1rem;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(#232433, 2)
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 0; /* TODO add logic to remove this line when showing other pages */
+    }
+
+    svg {
+      color: #fff;
+      width: 1.5rem;
+      max-height: 2.365625rem;
+      padding-bottom: .5rem;
+    }
+
+    span {
+      color: #fff
+    }
+  }
+}
+
+.activeItem {
+ 
+  &::before {
+    position: absolute;
+    left: 0;
+
+    width: .4375rem;
+    height: 6.1875rem;
+
+    background-color: #8592EB;
+    border-radius: 0 .5rem .5rem 0;
+
+    content: "";
+
+    height: 8rem; /* TODO add logic to remove this line when showing other pages */
+  }
+}
