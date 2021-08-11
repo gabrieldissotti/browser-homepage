@@ -91,3 +91,11 @@
     background-color: rgba(185, 29, 55, 0.21);
   }
 }
+
+span.isOk {
+  background-color: #4E9A91;
+
+  &:first-of-type {
+    display: none;
+  }
+}

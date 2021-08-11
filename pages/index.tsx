@@ -29,10 +29,10 @@ export default function Home() {
           <Product />
 
           <div className={styles.cards}>
+            <Card isOk />
             <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card isOk />
+            <Card isOk />
             <Card />
             <Card />
           </div>
