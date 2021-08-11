@@ -1,0 +1,94 @@
+@keyframes notification {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.card {
+  position: relative;
+
+  width: 100%;
+  padding: 1.5rem 1rem;
+
+  transition: all .6s;
+  box-sizing: border-box;
+  background: radial-gradient(104.94% 105.87% at 1.22% 3.21%, #282D50 0%, #22232E 100%);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 2px 3px rgba(#282D50, 0.38);
+  }
+
+  p {
+    margin-bottom: .5rem;
+    
+    font: {
+      style: normal;
+      family: 'Open Sans';
+      weight: normal;
+      size: .875rem;
+    }
+
+    color: #6E758B;
+    line-height: 1.1875rem;
+  }
+
+  strong {
+    font: {
+      family: 'Open Sans';
+      style: normal;
+      weight: 600;
+      size: 1.25rem;
+    }
+
+    color: #F3F2F8;
+    line-height: 1.6875rem;
+  }
+
+  span {
+    position: absolute;
+    right: -9px;
+    top: -10px;
+
+    width: 27px;
+    height: 27px !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    background: {
+      color: #B91D37;
+      clip: padding-box;
+    }
+    border-radius: 2rem;
+    
+    svg {
+      height: .6875rem;
+      color:#F3F2F8;
+    }
+
+    transition: border .5s;
+
+    box-sizing: border-box;
+  }
+  
+  span:first-of-type {
+    animation: notification infinite .7s;
+    
+    background-color: rgba(185, 29, 55, 0.21);
+  }
+}

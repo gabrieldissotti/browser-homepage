@@ -1,5 +1,10 @@
+
 import Head from 'next/head'
 import Menu from '../components/Menu'
+
+import Card from '../components/Card'
+import Product from '../components/Product'
+
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -17,6 +22,21 @@ export default function Home() {
         <h1 className={styles.title}>
           O que temos pra hoje?
         </h1>
+
+        <div className={styles.products} >
+          <h2>Meus produtos</h2>
+
+          <Product />
+
+          <div className={styles.cards}>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
       </main>
     </div>
   )

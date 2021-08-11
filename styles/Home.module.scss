@@ -8,11 +8,37 @@
 }
 
 .main {
-  padding: 2.5rem 2rem;
+  margin: 2.5rem 2rem;
+  width: 100%;
 
   .title {
+    margin-bottom: 2.5rem;
+
     color: #FDFDFD;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-weight: 400;
+    font: {
+      size: 2rem;
+      weight: 400;
+      family: 'IBM Plex Sans Condensed', sans-serif;
+    }
   }
+}
+
+.products {
+  width: 30%;
+  
+  h2 {
+    margin-bottom: 2.5rem;
+
+    color: #6E758B;
+    font: {
+      size: 1.5rem;
+      family: 'IBM Plex Sans Condensed';
+    }
+  }
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(3, 3fr);
 }
